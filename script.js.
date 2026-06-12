@@ -1,0 +1,15 @@
+// Selecionando os elementos do HTML que vamos usar
+const botao = document.getElementById('botao-clique');
+const displayContador = document.getElementById('numero-contador');
+
+// Criando a variável que vai guardar o número de cliques
+let cliques = 0;
+
+// Adicionando um "ouvinte" para detectar quando o botão for clicado
+botao.addEventListener('click', () => {
+    // Aumenta o valor em 1
+    cliques++; 
+    
+    // Atualiza o texto que aparece na tela com o novo valor
+    displayContador.textContent = cliques;
+});
