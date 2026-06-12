@@ -3,16 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Projeto Web</title>
+    <title>Mundo do Futebol</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Contador Interativo</h1>
-        <p class="contador" id="numero-contador">0</p>
-        <button id="botao-clique">Clique aqui!</button>
-    </div>
+    <header>
+        <h1>Futebol FC</h1>
+        <p>A paixão que nos move dentro e fora de campo</p>
+    </header>
+
+    <main class="container">
+        <section class="sobre">
+            <h2>Sobre o Clube</h2>
+            <p>Fundado no coração da torcida, o Futebol FC é mais do que um time: é uma religião. Com uma história repleta de glórias, dribles desconcertantes e defesas milagrosas, continuamos em busca de fazer história.</p>
+        </section>
+
+        <section class="interativo">
+            <h2>Galeria de Troféus</h2>
+            <p>Clique no botão abaixo para simular a conquista de mais um grande título!</p>
+            
+            <div class="contador-box">
+                <span id="contador-titulos">10</span>
+                <p>Títulos Conquistados</p>
+            </div>
+            
+            <button id="btn-conquistar">Conquistar Título! 🏆</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Criado por um fã de futebol</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

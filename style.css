@@ -1,52 +1,95 @@
-/* Configurações gerais da página */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
+/* Configurações Gerais */
+* {
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Caixa principal */
-.container {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 300px;
-    width: 100%;
-}
-
-h1 {
+body {
+    background-color: #f4f4f9;
     color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
 }
 
-/* O número do contador */
-.contador {
-    font-size: 48px;
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #1e5c22, #0d3b11);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Conteúdo Principal */
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #1e5c22;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Seção Interativa e Botão */
+.interativo {
+    text-align: center;
+}
+
+.contador-box {
+    margin: 1.5rem 0;
+}
+
+#contador-titulos {
+    font-size: 3.5rem;
     font-weight: bold;
-    color: #007bff;
-    margin: 20px 0;
+    color: #e67e22;
+    display: block;
 }
 
-/* Estilo do botão */
-button {
-    background-color: #007bff;
+#btn-conquistar {
+    background-color: #1e5c22;
     color: white;
     border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    border-radius: 6px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: background 0.3s ease, transform 0.1s ease;
 }
 
-/* Efeito ao passar o mouse no botão */
-button:hover {
-    background-color: #0056b3;
+#btn-conquistar:hover {
+    background-color: #144017;
+}
+
+#btn-conquistar:active {
+    transform: scale(0.95);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #222;
+    color: #bbb;
+    font-size: 0.9rem;
+    margin-top: 3rem;
 }

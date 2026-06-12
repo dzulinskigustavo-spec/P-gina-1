@@ -1,15 +1,16 @@
-// Selecionando os elementos do HTML que vamos usar
-const botao = document.getElementById('botao-clique');
-const displayContador = document.getElementById('numero-contador');
+// Seleciona os elementos do HTML
+const botaoConquistar = document.getElementById('btn-conquistar');
+const contadorTitulos = document.getElementById('contador-titulos');
 
-// Criando a variável que vai guardar o número de cliques
-let cliques = 0;
-
-// Adicionando um "ouvinte" para detectar quando o botão for clicado
-botao.addEventListener('click', () => {
-    // Aumenta o valor em 1
-    cliques++; 
+// Cria a função que será executada no clique
+botaoConquistar.addEventListener('click', () => {
+    // Pega o número atual, transforma em número inteiro e soma 1
+    let titulosAtuais = parseInt(contadorTitulos.textContent);
+    titulosAtuais++;
     
-    // Atualiza o texto que aparece na tela com o novo valor
-    displayContador.textContent = cliques;
+    // Atualiza o texto na tela
+    contadorTitulos.textContent = titulosAtuais;
+    
+    // Mensagem de comemoração
+    alert('É CAMPEÃO! 🏆 O grito da torcida ecoa no estádio!');
 });
